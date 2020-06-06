@@ -1,0 +1,33 @@
+sudo su
+osboxes.org
+echo 1 > /proc/sys/net/ipv4/ip_forward
+sudo iptables --policy FORWARD DROP
+sudo iptables -A FORWARD -p tcp --dport http -s 192.168.210.0/24 -d 192.168.136.5 -j ACCEPT
+sudo iptables -A FORWARD -p tcp --sport http -s 192.168.136.5 -d 192.168.210.0/24 -j ACCEPT
+sudo iptables -A FORWARD -p tcp --dport 3128 -s 192.168.170.0/24 -d 192.168.136.5 -j ACCEPT
+sudo iptables -A FORWARD -p tcp --sport 3128 -s 192.168.136.5 -d 192.168.170.0/24 -j ACCEPT
+
+
+#From DMZ to Public
+*Allow all communication (the other rule dont allow create communication from Public)
+sudo iptables -A FORWARD -p tcp --sport 3128 -s 192.168.136.5 -d 192.168.210.0/24 -j ACCEPT
+
+#From public to DMZ
+* Only allow packtes with ack (dont allow create communication)
+sudo iptables -A FORWARD --tcp-flags ALL ACK -p tcp --dport 3128 -s 192.168.136.5 -d 192.168.210.0/24 -j ACCEPT
+
+
+https://phoenixnap.com/kb/setup-install-squid-proxy-server-ubuntu
+
+
+ip 136: (DMZ)
+sudo ip route add 192.168.170.0/24 via 192.168.136.6 dev enp0s3
+sudo ip route add 192.168.210.0/24 via 192.168.136.6 dev enp0s3
+
+ip 170: (PRIVATE)
+sudo ip route add 192.168.136.0/24 via 192.168.170.6 dev enp0s3
+sudo ip route add 192.168.210.0/24 via 192.168.170.6 dev enp0s3
+
+ip 210: (public)
+sudo ip route add 192.168.136.0/24 via 192.168.210.5 dev eth0
+sudo ip route add 192.168.170.0/24 via 192.168.210.5 dev eth0

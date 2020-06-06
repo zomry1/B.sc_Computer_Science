@@ -1,0 +1,13 @@
+We want ret to be: 0xffffd2bc (0xffffd2b8 + 4)
+We know the ret = buffer address + argument 1
+We know that buffer address is: 0xffffd29e
+
+argument 1 is 30
+
+We want value in ret to be 0x080484ea
+We know the value in ret now is 0x0804846c
+return address: 0x0804846c
+wanted line: 0x080484ea
+
+argument 2 is 126
+

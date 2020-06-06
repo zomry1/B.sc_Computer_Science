@@ -1,0 +1,55 @@
+commit 69230b50e407f31a5f5a633102e439899745ef62
+Author: zomry1 <zomry1@gmail.com>
+Date:   Mon Jun 17 11:48:12 2019 +0300
+
+    FINISH
+
+commit 7e5daba5c7aba060a4dfad051e379bc3981e468f
+Author: Ofir Henig <ofir888800@gmail.com>
+Date:   Mon Jun 17 11:17:12 2019 +0300
+
+    add notes
+
+commit 42416608d4a916c460f73ca75378cad8d2351d47
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Jun 16 14:43:40 2019 +0300
+
+    finish
+    
+    need to clean code
+
+commit b43a7e313f944d4febdfaaf0df759a1eedcd175f
+Author: zomry1 <zomry1@gmail.com>
+Date:   Fri Jun 14 18:51:59 2019 +0300
+
+    finish
+    
+    need to style and clean code
+
+commit 81e4a37dac3ff4879a4da8f6d49f9281a6ba381c
+Author: zomry1 <zomry1@gmail.com>
+Date:   Fri Jun 14 16:29:59 2019 +0300
+
+    need to fix -
+    isPressed
+    
+    need to check -
+    send to server
+    
+    need to add -
+    return to center animation
+
+commit a735865412bcf8422034efaa9031c08e23d7586b
+Author: zomry1 <zomry1@gmail.com>
+Date:   Thu Jun 13 17:38:05 2019 +0300
+
+    Work on joystick
+    
+    need to fix:
+    joystick
+
+commit 03944fc8d955347db3623a9215019b5f849f670b
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Jun 12 23:34:03 2019 +0300
+
+    Initial commit

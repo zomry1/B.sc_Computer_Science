@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "display";
+}
+<head>
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<canvas id="can" style="border:1px solid #000000;"></canvas>
+
+<div style="display:none;">
+    <img id="map" ++++
+         src="~/Images/map.png" />
+</div>
+
+<script type="text/javascript">
+    var IntervalTime = @Session["HZ"] * 1000
+    var xPoints = [];
+    var yPoints = [];
+    var c = document.getElementById("can");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("map");
+    var interval;
+    var bool = 0;
+
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+
+    //Draw background
+    ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, c.width, c.height);
+    ctx.stroke();
+    //Save the context's state
+    var imageData = ctx.getImageData(0, 0, can.width, can.height);
+
+    function drawLines(xPoints, yPoints) {
+        // load the saved state of the context
+        ctx.putImageData(imageData, 0, 0);
+        var i;
+        //Draw lines
+        ctx.beginPath();
+        for (i = 0; i < xPoints.length - 1; i++) {
+            ctx.moveTo(xPoints[i], yPoints[i]);
+            ctx.lineTo(xPoints[i + 1], yPoints[i + 1]);
+            ctx.stroke();
+        }
+        //Draw the circle
+        ctx.beginPath();
+        ctx.arc(xPoints[i], yPoints[i], 5, 0, 2 * Math.PI, true);
+        ctx.stroke();
+    }
+
+    myTimer = (function () {
+        $.post("@Url.Action("GetData")").done(function (xml) {
+            //alert("empty");
+            if (xml == "") {
+                alert("done");
+                if (bool == 1) {
+                    clearInterval(interval);
+                }
+                return;
+            }
+            var xmlDoc = $.parseXML(xml),
+            $xml = $( xmlDoc ),
+            Lon = parseInt($xml.find("Lon").text());
+            Lon = (((Lon + 180) / 360) * can.width);
+
+            Lat =  parseInt($xml.find("Lat").text());
+            Lat = (((Lat + 90) / 180) * can.height);
+
+            xPoints.push(parseInt(Lon));
+            yPoints.push(parseInt(Lat));
+            drawLines(xPoints, yPoints);
+            });
+    });
+    if (IntervalTime != 0) {
+        interval = setInterval(myTimer, IntervalTime);
+        bool = 1;
+    }
+    myTimer();
+</script>

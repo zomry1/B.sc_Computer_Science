@@ -1,0 +1,36 @@
+commit 0be3a8aa3e05ea3f111dd2433b32f7baea3c3c08
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Jun 2 22:39:54 2019 +0300
+
+    added rudder and throttle
+    need to:
+    clean files and add comments
+
+commit f275fc5f327cd37e30226e402cfc21a80addc3be
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Jun 2 22:24:09 2019 +0300
+
+    clean html code
+    need to:
+    add rudder read and etc
+
+commit ae2de11cd5cfee56b15c206be8f75ab882e7721e
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Jun 2 22:01:32 2019 +0300
+
+    fix normalize lon and lat
+    need to:
+    read rudder and etc
+    clean code
+
+commit 1295f64b258687347a717e61c07c516470b89dce
+Author: Ofir Henig <ofir888800@gmail.com>
+Date:   Sun Jun 2 15:38:04 2019 +0300
+
+    Add project files.
+
+commit c0aa2c802a99da0b303bc44fd402e47b25102e65
+Author: Ofir Henig <ofir888800@gmail.com>
+Date:   Sun Jun 2 15:37:58 2019 +0300
+
+    Add .gitignore and .gitattributes.

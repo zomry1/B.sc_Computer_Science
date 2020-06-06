@@ -1,0 +1,36 @@
+commit 66de2bc1da7315202de8090ddc7c529d740d7b17
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Mar 24 18:06:21 2019 +0200
+
+    Update comments
+
+commit 20f4d11e433d916c59e86528ea96767445f797f8
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Mar 24 17:53:38 2019 +0200
+
+    move the typedef of delegate
+    remove readkey
+
+commit cbe22baf68aab2acc63ffb9c22986aac19ce2edd
+Author: zomry1 <zomry1@gmail.com>
+Date:   Fri Mar 22 11:27:51 2019 +0200
+
+    Added comments
+
+commit 4e751eb723c0645cb34723f8a52459d7f36ef61a
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Mar 13 21:22:55 2019 +0200
+
+    Finish first part (without events)
+
+commit 6431aef0388b9bb62c7a0890dfc17c222cb4e5fc
+Author: zomry1 <zomry1@gmail.com>
+Date:   Mon Mar 11 20:19:11 2019 +0200
+
+    Add project files.
+
+commit be1aaae08be417cbb36bb7c9571926e54571cd9a
+Author: zomry1 <zomry1@gmail.com>
+Date:   Mon Mar 11 20:19:09 2019 +0200
+
+    Add .gitignore and .gitattributes.

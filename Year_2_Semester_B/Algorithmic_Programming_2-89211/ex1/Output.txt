@@ -1,0 +1,147 @@
+All Available Functions:
+Double
+Triple
+Square
+Sqrt
+Plus2
+####################################
+
+All Available Functions:
+Double
+Triple
+Square
+Sqrt
+Plus2
+Stam
+####################################
+
+Mission of Type: Composed with the Name mission1 returned 100
+sqrt(100) = 10
+sqrt(10) = 3.16227766016838
+sqrt(3.16227766016838) = 1.77827941003892
+----------------------------------------
+mission1(100) = 100
+
+Mission of Type: Composed with the Name mission2 returned 91204
+sqrt(91204) = 302
+sqrt(302) = 17.3781471969828
+sqrt(17.3781471969828) = 4.16871049570281
+sqrt(4.16871049570281) = 2.04174202476777
+sqrt(2.04174202476777) = 1.42889538622244
+----------------------------------------
+mission2(100) = 91204
+
+Mission of Type: Single with the Name mission3 returned 200
+sqrt(200) = 14.142135623731
+sqrt(14.142135623731) = 3.76060309308639
+sqrt(3.76060309308639) = 1.93922744748686
+----------------------------------------
+mission3(100) = 200
+
+Mission of Type: Composed with the Name mission4 returned 302
+sqrt(302) = 17.3781471969828
+sqrt(17.3781471969828) = 4.16871049570281
+sqrt(4.16871049570281) = 2.04174202476777
+sqrt(2.04174202476777) = 1.42889538622244
+----------------------------------------
+mission4(100) = 302
+
+Mission of Type: Single with the Name mission5 returned 200
+sqrt(200) = 14.142135623731
+sqrt(14.142135623731) = 3.76060309308639
+sqrt(3.76060309308639) = 1.93922744748686
+----------------------------------------
+mission5(100) = 200
+
+Mission of Type: Composed with the Name mission2 returned 91204
+sqrt(91204) = 302
+sqrt(302) = 17.3781471969828
+sqrt(17.3781471969828) = 4.16871049570281
+sqrt(4.16871049570281) = 2.04174202476777
+sqrt(2.04174202476777) = 1.42889538622244
+----------------------------------------
+mission2(100) = 91204
+
+Mission of Type: Composed with the Name mission1 returned 100
+sqrt(100) = 10
+sqrt(10) = 3.16227766016838
+sqrt(3.16227766016838) = 1.77827941003892
+----------------------------------------
+mission1(100) = 100
+
+Mission of Type: Single with the Name mission3 returned 200
+sqrt(200) = 14.142135623731
+sqrt(14.142135623731) = 3.76060309308639
+sqrt(3.76060309308639) = 1.93922744748686
+----------------------------------------
+mission3(100) = 200
+
+Mission of Type: Single with the Name mission5 returned 200
+sqrt(200) = 14.142135623731
+sqrt(14.142135623731) = 3.76060309308639
+sqrt(3.76060309308639) = 1.93922744748686
+----------------------------------------
+mission5(100) = 200
+
+Mission of Type: Composed with the Name mission1 returned 2
+sqrt(2) = 1.4142135623731
+----------------------------------------
+mission1(2) = 2
+
+Mission of Type: Composed with the Name mission2 returned 64
+sqrt(64) = 8
+sqrt(8) = 2.82842712474619
+sqrt(2.82842712474619) = 1.68179283050743
+----------------------------------------
+mission2(2) = 64
+
+Mission of Type: Single with the Name mission3 returned 4
+sqrt(4) = 2
+----------------------------------------
+mission3(2) = 4
+
+Mission of Type: Composed with the Name mission4 returned 8
+sqrt(8) = 2.82842712474619
+sqrt(2.82842712474619) = 1.68179283050743
+----------------------------------------
+mission4(2) = 8
+
+Mission of Type: Single with the Name mission5 returned 102
+sqrt(102) = 10.0995049383621
+sqrt(10.0995049383621) = 3.17797182781127
+sqrt(3.17797182781127) = 1.78268668806699
+----------------------------------------
+mission5(2) = 102
+
+Mission of Type: Composed with the Name mission2 returned 64
+sqrt(64) = 8
+sqrt(8) = 2.82842712474619
+sqrt(2.82842712474619) = 1.68179283050743
+----------------------------------------
+mission2(2) = 64
+
+Mission of Type: Composed with the Name mission1 returned 2
+sqrt(2) = 1.4142135623731
+----------------------------------------
+mission1(2) = 2
+
+Mission of Type: Single with the Name mission3 returned 4
+sqrt(4) = 2
+----------------------------------------
+mission3(2) = 4
+
+Mission of Type: Single with the Name mission5 returned 102
+sqrt(102) = 10.0995049383621
+sqrt(10.0995049383621) = 3.17797182781127
+sqrt(3.17797182781127) = 1.78268668806699
+----------------------------------------
+mission5(2) = 102
+
+All Available Functions:
+Double
+Triple
+Square
+Sqrt
+Plus2
+Stam
+####################################

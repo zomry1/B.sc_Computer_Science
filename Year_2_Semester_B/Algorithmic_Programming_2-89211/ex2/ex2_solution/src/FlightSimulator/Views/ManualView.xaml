@@ -1,0 +1,45 @@
+﻿<UserControl x:Name="Manual"
+             x:Class="FlightSimulator.Views.ManualView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Views="clr-namespace:FlightSimulator.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DockPanel>
+            <StackPanel HorizontalAlignment="Left" DockPanel.Dock="Left">
+                <StackPanel.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </StackPanel.LayoutTransform>
+                <TextBlock HorizontalAlignment="Left" Margin="50 0 0 0" FontSize="15" Text="{Binding ElementName=SliderThrottle, Path=Value}"></TextBlock>
+                <Slider Name="SliderThrottle" HorizontalAlignment="Stretch" Minimum="-1" Maximum="1" Margin="50 0 50 0" Value="{Binding Throttle, UpdateSourceTrigger = PropertyChanged}" Ticks="-1, 0, 1" TickPlacement="BottomRight">
+                    <Slider.LayoutTransform>
+                        <RotateTransform Angle="180"/>
+                    </Slider.LayoutTransform>
+                </Slider>
+                <TextBlock HorizontalAlignment="Center">← throttle →</TextBlock>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Top" VerticalAlignment="Stretch" Margin="0 0 0 20">
+                <TextBlock HorizontalAlignment="Right" Padding="0 0 20 0" FontSize="15" Name="AileronText" Text="{Binding Aileron, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"/>
+                <TextBlock HorizontalAlignment="Center" >← aileron →</TextBlock>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Right" VerticalAlignment="Stretch" Margin="0 0 0 0">
+                <StackPanel.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </StackPanel.LayoutTransform>
+                <TextBlock HorizontalAlignment="Left" FontSize="15" Name="ElevatorText"  Text="{Binding Elevator, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"/>
+                <TextBlock HorizontalAlignment="Center">← elevator →</TextBlock>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="0 20 0 0">
+                <Slider Name="SliderRudder" HorizontalAlignment="Stretch" Minimum="-1" Maximum="1" Value="{Binding Rudder, UpdateSourceTrigger = PropertyChanged}" Ticks="-1, 0 ,1" TickPlacement="BottomRight"/>
+                <TextBlock HorizontalAlignment="Right" FontSize="15"  Text="{Binding ElementName=SliderRudder, Path=Value}"/>
+                <TextBlock HorizontalAlignment="Center">← rudder →</TextBlock>
+            </StackPanel>
+            <Viewbox>
+                <Views:Joystick  Aileron="{Binding ElementName=AileronText, Path=Text, Mode=OneWayToSource}" Elevator="{Binding ElementName=ElevatorText, Path=Text, Mode=OneWayToSource}"/>
+            </Viewbox>
+        </DockPanel>  
+    </Grid>
+</UserControl>

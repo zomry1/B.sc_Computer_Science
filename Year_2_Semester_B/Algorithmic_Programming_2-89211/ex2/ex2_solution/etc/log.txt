@@ -1,0 +1,112 @@
+commit 56aa775e24dc057fac24a4b9d717e0e9ea839bc4
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 28 14:21:59 2019 +0300
+
+    Fix throttle slider to be between -1 to 1
+
+commit b3b7f5707827d2654b5aaca047ba6a47aaaced31
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 28 11:41:58 2019 +0300
+
+    Fix Lan and Lon
+
+commit afd59fb0d42266c0c841ed2a3f155f18b58f07e4
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 28 11:09:11 2019 +0300
+
+    Added comments
+
+commit daff85a0f93343ab0fb8c2fd96c1e98f8be427a8
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sat Apr 27 21:40:46 2019 +0300
+
+    Removed messageBoxes
+    Fix manual view
+    Checked
+
+commit b214b4c0997d6afa27b5e524db333f46a6de9b93
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sat Apr 27 21:27:37 2019 +0300
+
+    Added Bursh converter
+    Added custome buttons
+    Working version - ready to submit
+
+commit 1145c904ce984bfc4baba211d608d1a1090116b3
+Author: zomry1 <zomry1@gmail.com>
+Date:   Tue Apr 16 15:29:06 2019 +0300
+
+    fix flightboard
+    add disconncted on closing software
+    finish!
+
+commit 4086958a7370707eb9c142d42779316b597e005f
+Author: zomry1 <zomry1@gmail.com>
+Date:   Tue Apr 16 03:11:19 2019 +0300
+
+    finish flightboard
+    need to fix - mutex abandoned
+
+commit 1de08995cf947aa2903bddf5d9d815e7f5655226
+Author: zomry1 <zomry1@gmail.com>
+Date:   Mon Apr 15 16:30:37 2019 +0300
+
+    fix client (also checked)
+
+commit 3abda37cc11e9d3e670defa9d3c13ff83e970196
+Author: zomry1 <zomry1@gmail.com>
+Date:   Mon Apr 15 02:46:33 2019 +0300
+
+    add InfoServer and FlightBoard logic
+    need to fix plotchar draw
+
+commit 7f318b06049cb5fc59265807faa93a4dbb1df1b9
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 14 03:00:25 2019 +0300
+
+    added autopilot and manual models
+    added filghtbord manual and settings views and view models
+
+commit d6b9382c926106a5070d9f86cc277664b565e8ac
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sat Apr 13 20:59:12 2019 +0300
+
+    almost finish manual view xaml
+
+commit c9adbf096429d4c9cf7fdf65afea302f306bd9c8
+Author: zomry1 <zomry1@gmail.com>
+Date:   Fri Apr 12 18:00:02 2019 +0300
+
+    added ManualView xaml
+
+commit 7cbea92c1648afb9d361ee055d5828ee5235e142
+Author: zomry1 <zomry1@gmail.com>
+Date:   Fri Apr 12 17:40:32 2019 +0300
+
+    Divide xaml of views
+    Add model for autopilot
+    finish sending commands
+
+commit 1cb72ac7ab7fda7d2362ae021434d6d65f50c9ef
+Author: Ofir Henig <ofir888800@gmail.com>
+Date:   Fri Apr 12 15:51:44 2019 +0300
+
+    binding not working
+
+commit 62b8dc6efd3c3a260d31502456081a5f3d19fe1e
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 7 16:08:57 2019 +0300
+
+    start
+
+commit 3467a3cde7305325bc04bdb36f11cb3171d0c0ff
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 7 13:37:17 2019 +0300
+
+    Add project files.
+
+commit f1b2e0f732b817ac5071a8ab46627eaf5b816218
+Author: zomry1 <zomry1@gmail.com>
+Date:   Sun Apr 7 13:37:15 2019 +0300
+
+    Add .gitignore and .gitattributes.

